@@ -1,0 +1,5 @@
+numlst =input().split()
+l = input().split()
+A = set(input().split())
+B = set(input().split())
+print(len(list(filter(lambda x: x in A, l))) - len(list(filter(lambda x: x in B, l))))
