@@ -25,9 +25,6 @@ function readLine() {
 const axios =  require('axios');
 
 async function getNumTransactions(username) {
-    // write your code here
-    // API endpoint: https://jsonmock.hackerrank.com/api/article_users?username=<username>
-    // API endpoint: https://jsonmock.hackerrank.com/api/transactions?&userId=<userId>
     try {
         const {data} = await axios.get(`https://jsonmock.hackerrank.com/api/article_users?username=${username}`);
         if(data.data && data.data.length !==0){
